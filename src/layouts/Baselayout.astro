@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
-import ProfileCard from '../components/ProfileCard.astro'
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <html lang="en">
@@ -9,14 +10,13 @@ import ProfileCard from '../components/ProfileCard.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Mack Johnson</title>
 	</head>
 	<body>
-		<nav class='bg-blue-900 text-white'> Nav Brr </nav>
-		<ProfileCard />
+		<Navbar/>
 		<main>
 			<slot />
 		</main>
-		<footer class='bg-orange-500'> Feet bar </footer>
+		<Footer/>
 	</body>
 </html>
