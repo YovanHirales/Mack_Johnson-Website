@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rock+Salt&display=swap');
 @import 'tailwindcss';
 @plugin 'daisyui';
+
+:root[data-theme='mytheme'] {
+	/* DaisyUI theme vars (from your HEX) */
+	--p: 20 44% 97%; /* primary ≈ #fbf7f5 */
+	--pc: 215 27% 16%; /* primary-content (dark ink) */
+
+	--s: 0 0% 98%; /* secondary ≈ #f9f9f9 */
+	--sc: 215 27% 16%;
+
+	--a: 204 75% 71%; /* accent ≈ #77c3ec */
+	--ac: 0 0% 100%;
+
+	/* base surface + text */
+	--b1: 0 0% 100%;
+	--bc: 215 27% 16%;
+
+	/* 🔁 Tailwind v4 color tokens that mirror DaisyUI */
+	--color-primary: hsl(var(--p));
+	--color-primary-content: hsl(var(--pc));
+
+	--color-secondary: hsl(var(--s));
+	--color-secondary-content: hsl(var(--sc));
+
+	--color-accent: hsl(var(--a));
+	--color-accent-content: hsl(var(--ac));
+
+	--color-base-100: hsl(var(--b1));
+	--color-base-content: hsl(var(--bc));
+}
 
 .font-montserrat {
 	font-family: 'Montserrat', sans-serif;
@@ -9,4 +38,10 @@
 
 .font-RockSalt {
 	font-family: 'Rock Salt', sans-serif;
+}
+
+.font-reenie-beanie-regular {
+	font-family: 'Reenie Beanie', cursive;
+	font-weight: 400;
+	font-style: normal;
 }

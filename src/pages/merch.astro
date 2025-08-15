@@ -1,0 +1,13 @@
+---
+import Baselayout from '../layouts/Baselayout.astro';
+import ItemCard from '../components/ItemCard.astro';
+---
+
+<Baselayout>
+	<!-- Item Container -->
+	<div class='bg-primary flex flex-wrap justify-center gap-4'>
+		<ItemCard title='item.1' price='60' img='/white_hoodie.png' />
+		<ItemCard title='item.2' price='60' img='/black_hoodie.png' />
+		<ItemCard title='item.3' price='45' img='/black_shirt.png' />
+	</div>
+</Baselayout>
