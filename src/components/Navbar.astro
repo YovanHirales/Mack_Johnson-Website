@@ -2,34 +2,41 @@
 
 ---
 
+<div class='flex items-center justify-between text-black bg-gray-50 shadow-sm'>
+	<!-- Center: Site Title -->
+	<div class='m-4'>
+		<a href='/' class='font-RockSalt text-xl'>Mack Johnson</a>
+	</div>
 
-<div class="flex items-center justify-between bg-black shadow-sm">
-  <!-- Center: Site Title -->
-  <div class="m-4">
-    <a class="font-montserrat text-xl">MACK JOHNSON</a>
-  </div>
+	<!-- Right: Hamburger Menu -->
+	<div class='ml-auto'>
+		<div class='dropdown dropdown-end'>
+			<button tabindex='0' role='button' class='btn btn-ghost lg:hidden'>
+				<!-- Hamburger icon -->
+				<svg
+					xmlns='http://www.w3.org/2000/svg'
+					class='h-5 w-5'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke='currentColor'
+				>
+					<path
+						stroke-linecap='round'
+						stroke-linejoin='round'
+						stroke-width='2'
+						d='M4 6h16M4 12h8m-8 6h16'></path>
+				</svg>
+			</button>
+			<ul
+				tabindex='0'
+				class='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-50 rounded-box w-30'
+			>
+				<!-- Pages -->
+				<li><a href='/shop'>Shop</a></li>
+				<li><a href='/music'>Music</a></li>
+			</ul>
+		</div>
+	</div>
 
-  <!-- Right: Hamburger Menu -->
-  <div class="ml-auto">
-    <div class="dropdown dropdown-end">
-      <button tabindex="0" role='button' class="btn btn-ghost lg:hidden">
-        <!-- Hamburger icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-        </svg>
-      </button>
-      <ul tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        
-          <!-- Pages -->
-        <li><a>Item 1</a></li>
-        <li><a>Item 3</a></li>
-
-      </ul>
-    </div>
-  </div>
-
-  <!-- End -->
+	<!-- End -->
 </div>
